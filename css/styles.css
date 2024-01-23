@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+.header {
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none; 
+    margin-left: 10px;   
+}
+.navigation img {
+    width: 150px;
+}
+.navigation a:hover {
+    color: yellow;
+}
