@@ -4,30 +4,122 @@
 
 body {
     margin: 0;
+    background-color: #000;
+    ;
 }
+
+
+/* Стилизация header */
 .header {
     background-image: url(../img/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    background-position: center center;
+    min-height: 115vh;
 }
 
 .navigation {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: stretch;
     flex-wrap: wrap;
     padding-top: 20px;
 }
 
 .navigation a {
     color: white;
-    text-decoration: none; 
-    margin-left: 10px;   
+    text-decoration: none;
+    color: #848895;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.3px;
 }
+
+.navigation a:nth-child(2) {
+    margin: 0 28px;
+}
+
+.menu {
+    margin-top: 9px;
+}
+
 .navigation img {
-    width: 150px;
+    width: 228px;
 }
+
 .navigation a:hover {
-    color: yellow;
+    background: radial-gradient(343.88% 97.53% at 50% 50%, #BF8836 0%, #F2DE8A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Стили для ссылки оптовый прайс */
+.special-price {
+    text-align: center;
+    padding-top: 845px;
+}
+
+.price-link {
+    border-radius: 24px;
+    background: #000;
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 10px 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 623px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 8px;
+    }
+    .special-price {
+        padding-top: 805px;
+    }
+    
+}
+
+@media (max-width: 530px) {
+    .navigation {
+        align-items: center;
+    }
+    .special-price {
+        padding-top: 838px;
+    }
+    .menu {
+        display: none;
+    }
+
 }
