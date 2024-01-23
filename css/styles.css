@@ -60,7 +60,7 @@ body {
 /* Стили для ссылки оптовый прайс */
 .special-price {
     text-align: center;
-    padding-top: 845px;
+    padding-top: 610px;
 }
 
 .price-link {
@@ -76,6 +76,69 @@ body {
     line-height: 20px;
     text-transform: uppercase;
     padding: 10px 18px;
+}
+.price-link:hover {
+    background: radial-gradient(343.88% 97.53% at 50% 50%, #BF8836 0%, #F2DE8A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Стилизация section-1 */
+.container-1 img {
+    width: 380px;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 42px;
+}
+
+
+
+.coffee-bg {
+    border-radius: 12px;
+    background-image: url(../img/bg-coffee.png);
+    filter: contrast(3);
+    filter: brightness(1);
+    text-align: center;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    max-width: 1240px;    
+    margin-top: 42px;
+
+}
+.coffee-bg-control {
+    display: flex;
+    justify-content: center;
+}
+.quality {
+    margin-top: 60px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.about-quality {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    margin-left: 105px;
+    margin-right: 105px;
 }
 
 
@@ -105,21 +168,26 @@ body {
         align-items: flex-start;
         margin-left: 8px;
     }
+
     .special-price {
-        padding-top: 805px;
+        padding-top: 575px;
     }
-    
+
 }
 
 @media (max-width: 530px) {
     .navigation {
         align-items: center;
+        padding-top: 50px;
     }
+
     .special-price {
-        padding-top: 838px;
+        padding-top: 580px;
     }
+
     .menu {
         display: none;
     }
+
 
 }
