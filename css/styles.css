@@ -77,6 +77,7 @@ body {
     text-transform: uppercase;
     padding: 10px 18px;
 }
+
 .price-link:hover {
     background: radial-gradient(343.88% 97.53% at 50% 50%, #BF8836 0%, #F2DE8A 100%);
     background-clip: text;
@@ -94,7 +95,7 @@ body {
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
-    margin-top: 42px;
+    margin-top: 20px;
 }
 
 
@@ -102,21 +103,22 @@ body {
 .coffee-bg {
     border-radius: 12px;
     background-image: url(../img/bg-coffee.png);
-    filter: contrast(3);
-    filter: brightness(1);
+    filter: brightness(.7);
+    filter: saturate(.7);
     text-align: center;
-    min-height: 80vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    max-width: 1240px;    
-    margin-top: 42px;
+    max-width: 1240px;
 
 }
+
 .coffee-bg-control {
     display: flex;
     justify-content: center;
 }
+
 .quality {
     margin-top: 60px;
     color: #FFF;
@@ -127,6 +129,7 @@ body {
     font-weight: 700;
     line-height: 29px;
     text-transform: uppercase;
+
 }
 
 .about-quality {
@@ -141,12 +144,106 @@ body {
     margin-right: 105px;
 }
 
+/* Стилизация Section-2 */
+.coffee-bg-2 {
+    border-radius: 12px;
+    background-image: url(../img/cup-of-cof-bg.png);
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    max-width: 1240px;
+    filter: brightness(1.2);
+}
 
+.coffee-bg-control {
+    margin-top: 20px;
+}
 
+.paragraph-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+    margin-left: 50px;
+}
 
+.self-proud {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 24px;
+}
 
+.text-of-self {
+    color: #FFF;
+}
 
+.space-top {
+    margin-top: 60px;
+}
 
+.contact-us {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    padding: 10px 50px;
+}
+
+.contact-us:hover {
+    background: radial-gradient(343.88% 97.53% at 50% 50%, #BF8836 0%, #F2DE8A 100%);
+    color: #000;
+}
+
+.contact-us-content {
+    margin-top: 63px;
+}
+
+/* Стилизация Section-3 */
+.bg-making-coffee {
+    border-radius: 12px;
+    background-image: url(../img/process-coffee-making.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    background-position: center;
+    max-width: 1240px;
+
+}
+.paragraph-control-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 80vh;
+    margin-right: 30px;
+}
+
+.benefit-price {
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.text-price {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+}
 
 
 
