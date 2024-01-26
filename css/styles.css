@@ -1,5 +1,9 @@
+@import url(animations.css);
+
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -86,7 +90,7 @@ body {
 }
 
 /* Стилизация section-1 */
-.container-1 img {
+.image-1 {
     width: 380px;
 }
 
@@ -330,6 +334,13 @@ body {
     padding: 6px 0;
 }
 
+.my-btn:hover {
+    background: radial-gradient(343.88% 97.53% at 50% 50%, #BF8836 0%, #F2DE8A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .input::placeholder {
     text-align: center;
 }
@@ -352,8 +363,18 @@ span {
     top: 150px;
 }
 
+.footer-icon:hover {
+    opacity: 0;
+}
 
-
+.footer-link:hover {
+    background-image: url(../icons/arrow-up-circle-fill.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 1s linear;
+    transform: scale(2);
+    display: inline-block;
+}
 
 
 
