@@ -334,15 +334,17 @@ body {
     text-align: center;
 }
 
-span  {
+span {
     color: rgba(248, 228, 190, 0.80);
 }
+
 .beans-left {
     width: 200px;
     position: absolute;
     left: 80px;
     bottom: 50px;
 }
+
 .beans-right {
     width: 200px;
     position: absolute;
