@@ -4,16 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Rey Negro</title>
 </head>
 
 <body>
-    <header class="header ">
+    <header class="header" id="top">
         <nav class="navigation tracking-in-expand-fwd-top">
-            <div class="logo "><a href="/index.html">
-                    <img src="./icons/icon-rey.svg" id="top" alt=""></div>
+            <div class="logo"><a href="/index.html">
+                    <img src="./icons/icon-rey.svg" alt=""></div>
             </a>
             <div class="menu">
                 <a href="">Главная</a>
@@ -104,12 +111,16 @@
         </section>
         <div class="coffee-bg-control">
             <div class="coffee-bg">
-                <p class="quality">гарантия качества!</p>
-                <p class="about-quality">На нашем производстве мы используем передовые технологии обжарки зерна, которые
-                    обеспечивают
-                    полный контроль над ароматом, текстурой и вкусом. Контроль качества обжарки на каждом этапе.
-                    Мы гарантируем поставки только высококачественного готового продукта с равномерной степенью обжарки.
-                </p>
+                <div class="quality col-12 text-center mt-sm-1">гарантия качества!</div>
+                <div class="about-quality col-lg-10 col-sm-12 text-center w-100 mt-5">
+                    <p class="text-center">
+                        На нашем производстве мы используем передовые технологии обжарки зерна, которые
+                        обеспечивают
+                        полный контроль над ароматом, текстурой и вкусом. Контроль качества обжарки на каждом этапе.
+                        Мы гарантируем поставки только высококачественного готового продукта с равномерной степенью
+                        обжарки.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="slider text-center">
@@ -123,7 +134,7 @@
             <div class="coffee-bg-control special-margin">
                 <div class="coffee-bg-2">
                     <div class="paragraph-control">
-                        <div class="col-6 space-top">
+                        <div class="col-lg-6 col-sm-10 space-top">
                             <p class="self-proud mb-5 ">Индивидуальный подход</p>
                             <p class="text-of-self mb-5">В центре нашей философии лежит индивидуальность. Мы приглашаем
                                 вас
@@ -165,7 +176,7 @@
             </div>
         </div>
         <div class="video-position">
-            <video id="videoCoffee" src="./video/Производство_Кофе.mp4" type="video/mp4" controls>
+            <video id="videoCoffee" src="./video/coffeemaking.mp4" type="video/mp4" controls>
             </video>
         </div>
         <div>
@@ -174,15 +185,15 @@
                     <div class="text-center ">
                         <p class="text-uppercase get-price">Получи <span>оптовый прайс</span> прямо сейчас!</p>
                     </div>
-                    <div class="row justify-content-center align-items-center position-relative">
+                    <div class="row footer-block justify-content-center align-items-center position-relative">
                         <img src="./img/./coffee-beans-left.png" class="beans-left" alt="">
-                        <div class="col-lg-3 col-sm-6">
+                        <div class="col-lg-3 col-sm-10 text-sm-center">
                             <p class="suggest-for-corp">Предложение для корпоративных клиентов</p>
                             <p class="subtitle-suggest">Индивидуальные условия! Для бизнеса, для офисов, ресторанов,
                                 кофеен, отелей </p>
                         </div>
-                        <div class="col-lg-4 col-sm-6 align-self-stretch">
-                            <form action="">
+                        <div class="col-lg-4 col-sm-10 align-self-stretch text-sm-center">
+                            <form action="#" class="d-sm-flex flex-sm-column align-items-sm-center" id="form">
                                 <input class="d-block mt-2 input" type="text" name="" id="" required placeholder="ИМЯ">
                                 <input class="d-block input" type="email" name="" id="" required placeholder="E-MAIL">
                                 <input class="d-block input" type="tel" name="" id="" required placeholder="ТЕЛЕФОН">
@@ -208,6 +219,8 @@
 
     <script src="./js/link-top.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/nav-fixed.js"></script>
+    <script src="./js/forms.js"></script>
 </body>
 
 </html>

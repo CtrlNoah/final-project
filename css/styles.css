@@ -62,8 +62,12 @@ body {
 
 /* Стили для ссылки оптовый прайс */
 .special-price {
-    text-align: center;
-    padding-top: 610px;
+    /* text-align: center;
+    padding-top: 610px; */
+    display: flex;
+    justify-content: center;
+    min-height: 97vh;
+    align-items: flex-end;
 }
 
 .price-link {
@@ -143,8 +147,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
-    margin-left: 105px;
-    margin-right: 105px;
+
 }
 
 /* Стилизация Section-2 */
@@ -280,7 +283,7 @@ body {
 }
 
 .get-price {
-    padding-top: 60px;
+    padding-top: 20px;
     color: #FFF;
     text-align: center;
     font-family: Poppins;
@@ -344,6 +347,10 @@ body {
     text-align: center;
 }
 
+.input {
+    color: #FFF;
+}
+
 span {
     color: rgba(248, 228, 190, 0.80);
 }
@@ -351,7 +358,7 @@ span {
 .beans-left {
     width: 200px;
     position: absolute;
-    left: 80px;
+    left: 50px;
     bottom: 50px;
 }
 
@@ -381,21 +388,25 @@ span {
 
 
 
+
+
+
 @media (max-width: 623px) {
 
+    
     .navigation {
         flex-direction: column;
         align-items: flex-start;
         margin-left: 8px;
     }
-
+    
     .special-price {
-        padding-top: 575px;
+        min-height: 90vh;
     }
-
 }
-
+    
 @media (max-width: 530px) {
+
     .navigation {
         align-items: center;
         padding-top: 50px;
@@ -408,6 +419,10 @@ span {
     .menu {
         display: none;
     }
+}
 
-
+@media (max-width: 529px) {
+    .special-price {
+        padding-bottom: 30px;
+    }
 }

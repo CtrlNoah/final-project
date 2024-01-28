@@ -134,7 +134,6 @@
     height: 48px;
     border-radius: 50%;
     border: 6px solid #fff;
-    background: #000;
     color: #fff;
     position: absolute;
     margin-top: 45%;
@@ -143,6 +142,7 @@
     font-size: 1rem;
     line-height: 2rem;
     box-shadow: 3px 3px 3px #000;
+    background-color: transparent;
 }
 
 .prev-button:active, .next-button:active {
@@ -153,3 +153,50 @@
     left: auto;
     right: -130px;
 }
+
+/* styles for animations */
+.fixed {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    background-color: #000000c5;
+    z-index: 10000;
+    
+}
+
+.fixed .menu a {
+    color: #FFF
+}
+
+
+
+
+@media (max-width: 1149px) {
+    .slider {
+        overflow: hidden;
+    }
+    .prev-button {
+        left: 20px;
+    }
+    .next-button {
+        right: 10px;
+    }
+    .contact-us-content {
+        margin-bottom: 50px;
+    }
+    .price-link {
+        padding-top: 300px;
+    }
+}
+@media (max-width: 1065px) {
+    .beans-left,.beans-right {
+        display: none;
+    }
+} 
+@media (max-width: 730px) {
+    .footer-block {
+        flex-direction: column;
+    }
+} 
