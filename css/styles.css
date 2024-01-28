@@ -1,4 +1,4 @@
-@import url(animations.css);
+@import url('nextstyles.css');
 
 * {
     box-sizing: border-box;
@@ -9,7 +9,6 @@
 body {
     margin: 0;
     background-color: #000;
-    ;
 }
 
 
@@ -110,13 +109,13 @@ body {
     filter: brightness(.7);
     filter: saturate(.7);
     text-align: center;
-    min-height: 100vh;
+    min-height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
     max-width: 1240px;
-
 }
+
 
 .coffee-bg-control {
     display: flex;
@@ -252,7 +251,7 @@ body {
 
 /* Video */
 #videoCoffee {
-    width: 50%;
+    width: 60%;
     height: auto;
     border-radius: 12px;
 }
