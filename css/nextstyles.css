@@ -197,29 +197,3 @@
         padding-top: 300px;
     }
 }
-
-@media (max-width: 1065px) {
-
-    .beans-left,
-    .beans-right {
-        display: none;
-    }
-}
-
-@media (max-width: 730px) {
-    .footer-block {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 600px) {
-    .header {
-        background-size: 50%;
-    }
-}
-
-@media (max-width: 575px) {
-    #form {
-        padding-left: 100px;
-    }
-}
