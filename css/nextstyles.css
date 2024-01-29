@@ -115,12 +115,14 @@
     position: relative;
     margin-top: 20px;
 }
+
 .slider-line {
     position: relative;
     display: flex;
     gap: 10px;
-    
+
 }
+
 .slider img {
     max-width: 500px;
     width: 100%;
@@ -145,7 +147,8 @@
     background-color: transparent;
 }
 
-.prev-button:active, .next-button:active {
+.prev-button:active,
+.next-button:active {
     background: #c0c0c0;
 }
 
@@ -163,7 +166,7 @@
     opacity: 1;
     background-color: #000000c5;
     z-index: 10000;
-    
+
 }
 
 .fixed .menu a {
@@ -177,26 +180,46 @@
     .slider {
         overflow: hidden;
     }
+
     .prev-button {
         left: 20px;
     }
+
     .next-button {
         right: 10px;
     }
+
     .contact-us-content {
         margin-bottom: 50px;
     }
+
     .price-link {
         padding-top: 300px;
     }
 }
+
 @media (max-width: 1065px) {
-    .beans-left,.beans-right {
+
+    .beans-left,
+    .beans-right {
         display: none;
     }
-} 
+}
+
 @media (max-width: 730px) {
     .footer-block {
         flex-direction: column;
     }
-} 
+}
+
+@media (max-width: 600px) {
+    .header {
+        background-size: 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    #form {
+        padding-left: 100px;
+    }
+}

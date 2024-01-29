@@ -393,18 +393,22 @@ span {
 
 @media (max-width: 623px) {
 
-    
+
     .navigation {
         flex-direction: column;
         align-items: flex-start;
-        margin-left: 8px;
     }
-    
+
     .special-price {
         min-height: 90vh;
     }
+
+    .contact-us {
+        color: #BF8836;
+        border: 1px solid #000;
+    }
 }
-    
+
 @media (max-width: 530px) {
 
     .navigation {
