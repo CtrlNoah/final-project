@@ -172,28 +172,3 @@
 .fixed .menu a {
     color: #FFF
 }
-
-
-
-
-@media (max-width: 1149px) {
-    .slider {
-        overflow: hidden;
-    }
-
-    .prev-button {
-        left: 20px;
-    }
-
-    .next-button {
-        right: 10px;
-    }
-
-    .contact-us-content {
-        margin-bottom: 50px;
-    }
-
-    .price-link {
-        padding-top: 300px;
-    }
-}

@@ -423,6 +423,28 @@ span {
     }
 }
 
+@media (max-width: 1149px) {
+    .slider {
+        overflow: hidden;
+    }
+
+    .prev-button {
+        left: 20px;
+    }
+
+    .next-button {
+        right: 10px;
+    }
+
+    .contact-us-content {
+        margin-bottom: 50px;
+    }
+
+    .price-link {
+        padding-top: 300px;
+    }
+}
+
 @media (max-width: 532px) {
     .header {
         background-size: 100% 100%;

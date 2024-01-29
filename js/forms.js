@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    form.addEventListener('submit', function(ev){
+    form.addEventListener('submit', function (ev) {
         ev.preventDefault();
         alert(`${name.value}, мы получили Ваш номер - ${tel.value}, скоро с Вами свяжется наш менеджер. Ваш выбор - наше вдохновление!`);
     })
