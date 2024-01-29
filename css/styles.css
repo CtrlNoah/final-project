@@ -425,7 +425,7 @@ span {
 
 @media (max-width: 532px) {
     .header {
-        background-size: 100% auto;
+        background-size: 100% 100%;
         background-position: 0 0;
         min-height: 0;
     }
@@ -455,6 +455,6 @@ span {
 
 @media (max-width: 529px) {
     .navigation {
-        padding-top: 5px;
+        padding-top: 20px;
     }
 }
