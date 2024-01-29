@@ -423,18 +423,21 @@ span {
     }
 }
 
-@media (max-width: 533px) {
+@media (max-width: 532px) {
     .header {
-        background-size: 100% 80%;
+        background-size: 100% auto;
         background-position: 0 0;
-
+        min-height: 0;
+    }
+    .special-price {
+        min-height: 38vh;
     }
 }
 
 @media (max-width:531px) {
 
     .special-price {
-        min-height: 70vh;
+        min-height: 40vh;
     }
 }
 
@@ -447,5 +450,11 @@ span {
 
     .menu {
         display: none;
+    }
+}
+
+@media (max-width: 529px) {
+    .navigation {
+        padding-top: 5px;
     }
 }
