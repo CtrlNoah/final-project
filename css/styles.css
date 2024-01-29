@@ -461,7 +461,7 @@ span {
 
     .special-price {
         min-height: 40vh;
-        margin-bottom: 15px;
+        padding-bottom: 15px;
     }
 }
 
@@ -469,7 +469,6 @@ span {
 
     .navigation {
         align-items: center;
-        padding-top: 50px;
     }
 
     .menu {
