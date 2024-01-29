@@ -308,7 +308,7 @@ body {
     background: #19161C;
     margin-bottom: 25px;
     width: 80%;
-    padding: 6px 0;
+    padding: 6px 0 6px 10px;
 }
 
 .my-btn {
@@ -374,6 +374,28 @@ span {
 
 
 
+
+/* медиа запросы */
+
+@media (max-width: 1149px) {
+    .slider {
+        overflow: hidden;
+    }
+
+    .prev-button {
+        left: 20px;
+    }
+
+    .next-button {
+        right: 10px;
+    }
+
+    .contact-us-content {
+        margin-bottom: 50px;
+    }
+
+}
+
 @media (max-width: 1065px) {
 
     .beans-left,
@@ -423,28 +445,6 @@ span {
     }
 }
 
-@media (max-width: 1149px) {
-    .slider {
-        overflow: hidden;
-    }
-
-    .prev-button {
-        left: 20px;
-    }
-
-    .next-button {
-        right: 10px;
-    }
-
-    .contact-us-content {
-        margin-bottom: 50px;
-    }
-
-    .price-link {
-        padding-top: 300px;
-    }
-}
-
 @media (max-width: 532px) {
     .header {
         background-size: 100% 100%;
@@ -461,6 +461,7 @@ span {
 
     .special-price {
         min-height: 40vh;
+        margin-bottom: 15px;
     }
 }
 
