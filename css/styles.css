@@ -2,7 +2,7 @@
 
 * {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -28,13 +28,13 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 20px;
 }
 
@@ -77,12 +77,12 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     min-height: 97vh;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
 }
 
 .price-link {
@@ -117,11 +117,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 50px;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
@@ -130,16 +130,20 @@ body {
 .coffee-bg {
     border-radius: 12px;
     background-image: url(../img/bg-coffee.png);
-    -webkit-filter: brightness(.7);
-            filter: brightness(.7);
-    -webkit-filter: saturate(.7);
-            filter: saturate(.7);
     text-align: center;
     min-height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
     max-width: 1240px;
+    background-color: #242323;
+    background-blend-mode: screen;
+}
+
+.quality-text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -148,8 +152,8 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .quality {
@@ -182,9 +186,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
+    background-color: #141414;
+    background-blend-mode: screen;
     max-width: 1240px;
     -webkit-filter: brightness(1.2);
-            filter: brightness(1.2);
+    filter: brightness(1.2);
 }
 
 .coffee-bg-control {
@@ -197,11 +203,11 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     min-height: 70vh;
     margin-left: 50px;
 }
@@ -262,14 +268,14 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     min-height: 80vh;
     margin-right: 30px;
 }
@@ -310,19 +316,18 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .cta-bg {
     border-radius: 12px;
     background: rgba(25, 22, 28, 0.80);
     -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     min-height: 60vh;
     width: 1240px;
 
@@ -440,8 +445,8 @@ span {
     -o-transition: all 1s linear;
     transition: all 1s linear;
     -webkit-transform: scale(2);
-        -ms-transform: scale(2);
-            transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
     display: inline-block;
 }
 
@@ -449,6 +454,11 @@ span {
 
 
 /* медиа запросы */
+@media (max-width: 1184px) {
+    .coffee-bg {
+        background-position: top;
+    }
+}
 
 @media (max-width: 1149px) {
     .slider {
@@ -477,12 +487,19 @@ span {
     }
 }
 
+@media (max-width: 945px) {
+    .coffee-bg-2 {
+        background-position: 35% 75%;
+        ;
+    }
+}
+
 @media (max-width: 730px) {
     .footer-block {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 }
 
@@ -491,11 +508,15 @@ span {
     .navigation {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    .text-of-self {
+        font-size: 15px;
     }
 
     .contact-us {
@@ -507,6 +528,25 @@ span {
 @media (max-width: 575px) {
     #form {
         padding-left: 80px;
+    }
+
+    .bg-making-coffee {
+        background-position: 68% 75%;
+    }
+
+    .text-price {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 569px) {
+    .about-quality p {
+        line-height: 15px;
+        font-size: 15px;
+    }
+
+    .quality {
+        margin-top: 15px;
     }
 }
 
@@ -528,9 +568,27 @@ span {
 
 @media (max-width: 532px) {
     .header {
-        background-size: 100% 100%;
+        background-size: cover;
         background-position: 0 0;
         min-height: 0;
+    }
+
+    .space-top {
+        text-align: center;
+    }
+
+    .paragraph-control {
+        margin-left: 10px;
+    }
+
+    .text-of-self {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact-us {
+        display: inline-block;
+        width: 100%;
     }
 
     .special-price {
@@ -550,8 +608,8 @@ span {
 
     .navigation {
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .menu {
