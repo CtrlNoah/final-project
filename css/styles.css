@@ -570,7 +570,7 @@ span {
 @media (max-width: 532px) {
     .header {
         background-size: cover;
-        background-position: 30% 20%;
+        background-position: 50% 20%;
         min-height: 0;
     }
 
@@ -596,6 +596,23 @@ span {
 
     .special-price {
         min-height: 38vh;
+    }
+
+    .suggest-for-corp {
+        font-size: 20px;
+    }
+
+    .subtitle-suggest {
+        font-size: 17px;
+    }
+
+    #form {
+        padding: 15px;
+    }
+
+    .input,
+    .my-btn {
+        width: 100%;
     }
 }
 
