@@ -456,7 +456,7 @@ span {
 /* медиа запросы */
 @media (max-width: 1184px) {
     .coffee-bg {
-        background-position: top;
+        background-position: 30% 20%;
     }
 }
 
@@ -489,8 +489,7 @@ span {
 
 @media (max-width: 945px) {
     .coffee-bg-2 {
-        background-position: 35% 75%;
-        ;
+        background-position: 55% 75%;
     }
 }
 
@@ -516,7 +515,7 @@ span {
     }
 
     .text-of-self {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .contact-us {
@@ -531,22 +530,24 @@ span {
     }
 
     .bg-making-coffee {
-        background-position: 68% 75%;
+        background-position: 55% 75%;
     }
 
     .text-price {
-        font-size: 15px;
+        font-size: 17px;
     }
 }
 
 @media (max-width: 569px) {
     .about-quality p {
         line-height: 15px;
-        font-size: 15px;
+        font-size: 17px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .quality {
-        margin-top: 15px;
+        margin-top: 30px;
     }
 }
 
@@ -569,7 +570,7 @@ span {
 @media (max-width: 532px) {
     .header {
         background-size: cover;
-        background-position: 0 0;
+        background-position: 30% 20%;
         min-height: 0;
     }
 
@@ -579,6 +580,8 @@ span {
 
     .paragraph-control {
         margin-left: 10px;
+        padding-left: 5px;
+        padding-right: 15px;
     }
 
     .text-of-self {
