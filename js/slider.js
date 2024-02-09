@@ -46,7 +46,6 @@ const nextSlide = () => {
 
     activeImage++;
     if (activeImage >= images.length) activeImage = 0;
-    // document.querySelector('.slider-line img').remove();
     nextImageGenerate();
     animate({
         duration: 1000,
@@ -63,7 +62,6 @@ const prevSlide = () => {
 
     activeImage--;
     if (activeImage < 0) activeImage = images.length - 1;
-    // document.querySelector('.slider-line img:last-child').remove();
     prevImageGenerate(true);
     animate({
         duration: 1000,

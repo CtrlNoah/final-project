@@ -71,8 +71,6 @@ body {
 
 /* Стили для ссылки оптовый прайс */
 .special-price {
-    /* text-align: center;
-    padding-top: 610px; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
